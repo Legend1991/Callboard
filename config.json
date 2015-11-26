@@ -1,0 +1,35 @@
+{
+  "db": {
+    "client": "mysql",
+    "connection": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "user": "root",
+      "password": "123",
+      "charset": "utf8",
+      "timezone": "UTC"
+    },
+    "database": "callboard",
+    "seeds": {
+      "directory": "./app/seeds/"
+    },
+    "migrations": {
+      "directory": "./app/migrations/"
+    }
+  },
+  "port": 3000,
+  "routes": [
+    "./app/routes/user.route.js",
+    "./app/routes/item.route.js"
+  ],
+  "file": {
+    "uploads": "./app/uploads/",
+    "maxSize": 1048576,
+    "types": [
+      "jpg",
+      "jpeg",
+      "png",
+      "bmp"
+    ]
+  }
+}
